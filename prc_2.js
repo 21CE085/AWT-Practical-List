@@ -1,4 +1,4 @@
-const numbersArray = [100, 200, 300, 400, 500];
+const numbersArray = [10, "20", { 30: "Nirmit" }, 40.5, true];
 
 const arrayLength = numbersArray.length;
 console.log("Length of the array:", arrayLength);
@@ -6,7 +6,7 @@ console.log("Length of the array:", arrayLength);
 console.log("Element at index 2:", numbersArray[2]);
 console.log("Element at index 4:", numbersArray[4]);
 
-numbersArray.push(600);
+numbersArray.push({ 60: "Pandya" });
 console.log("Array after push:", numbersArray);
 
 numbersArray.pop();
@@ -23,17 +23,17 @@ console.log("Joined array elements:", numbersArray.join(", "));
 delete numbersArray[2];
 console.log("Array after delete:", numbersArray);
 
-const newArray = numbersArray.concat([700, 800]);
+const newArray = numbersArray.concat([70, 80]);
 console.log("Concatenated array:", newArray);
 
 const flatArray = [
-  [11, 21],
-  [31, 41],
-  [51, 61],
+  [1, 10],
+  [3, 10],
+  [5, 10],
 ].flat();
 console.log("Flat array:", flatArray);
 
-const splicedArray = numbersArray.splice(1, 2, 250, 350);
+const splicedArray = numbersArray.splice(1, 2, 25, 35);
 console.log("Array after splice:", numbersArray);
 console.log("Removed elements:", splicedArray);
 
@@ -41,8 +41,8 @@ const slicedArray = numbersArray.slice(1, 4);
 console.log("Sliced array:", slicedArray);
 
 const person = {
-  name: "Jatin Mamtora",
-  age: 18,
+  name: "Nirmit Pandya",
+  age: 19,
   gender: "Male",
 };
 
