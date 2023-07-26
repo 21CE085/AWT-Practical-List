@@ -1,28 +1,28 @@
-let x = 10;
-x = 20;
-console.log(x);
+let a = 10;
+a = 20;
+console.log(a);
 
 const PI = 3.14;
 
-const add = (a, b) => a + b;
-console.log(add(5, 10));
+const add = (x, y) => x + y;
+console.log(add(67, 10));
 
-const arr1 = [1, 2, 3];
-const arr2 = [...arr1, 4, 5];
+const arr1 = [19, 29, 39, 56, 79, 89];
+const arr2 = [...arr1, 43, 53];
 console.log(arr2);
 
-const veg = ["potato", "onion", "brinjal"];
-for (const each of veg) {
+const vegie = ["potato", "onion", "brinjal"];
+for (const each of vegie) {
   console.log(each);
 }
 
-const map = new Map();
-map.set("key1", "value1");
-map.set("key2", "value2");
-console.log(map.get("key1"));
+const mp = new Map();
+mp.set("key1", "value1");
+mp.set("key2", "value2");
+console.log(mp.get("key1"));
 
-const set = new Set([1, 2, 3, 3, 4, 5, 6, 7, 8]);
-console.log(set);
+const st = new Set([12, 22, 32, 23, 42, 52, 62, 72, 82]);
+console.log(st);
 
 class Person {
   constructor(name, age) {
@@ -32,7 +32,7 @@ class Person {
 
   greet() {
     console.log(
-      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+      `Hello, my name is ${this.name} & I am ${this.age} years old.`
     );
   }
 }
@@ -43,7 +43,7 @@ user.greet();
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Data fetched successfully!");
+      resolve("Data fetched");
     }, 5000);
   });
 };
@@ -67,4 +67,4 @@ const sum = (...numbers) => {
   return numbers.reduce((acc, num) => acc + num, 0);
 };
 
-console.log(sum(1, 2, 3, 4, 5));
+console.log(sum(18, 82, 38, 49, 50));
