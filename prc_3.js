@@ -11,9 +11,9 @@ const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5];
 console.log(arr2);
 
-const fruits = ["apple", "banana", "orange"];
-for (const fruit of fruits) {
-  console.log(fruit);
+const veg = ["potato", "onion", "brinjal"];
+for (const each of veg) {
+  console.log(each);
 }
 
 const map = new Map();
@@ -21,7 +21,7 @@ map.set("key1", "value1");
 map.set("key2", "value2");
 console.log(map.get("key1"));
 
-const set = new Set([1, 2, 3, 3, 4, 5]);
+const set = new Set([1, 2, 3, 3, 4, 5, 6, 7, 8]);
 console.log(set);
 
 class Person {
@@ -37,14 +37,14 @@ class Person {
   }
 }
 
-const john = new Person("Jatin", 18);
-john.greet();
+const user = new Person("Jatin", 18);
+user.greet();
 
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("Data fetched successfully!");
-    }, 2000);
+    }, 5000);
   });
 };
 
@@ -52,8 +52,8 @@ fetchData().then((data) => {
   console.log(data);
 });
 
-const sym1 = Symbol("symbol1");
-const sym2 = Symbol("symbol2");
+const sym1 = Symbol("foo");
+const sym2 = Symbol("foo");
 console.log(sym1 === sym2);
 
 const greet = (name = "Guest") => {
@@ -61,7 +61,7 @@ const greet = (name = "Guest") => {
 };
 
 greet();
-greet("John");
+greet("jatin");
 
 const sum = (...numbers) => {
   return numbers.reduce((acc, num) => acc + num, 0);
